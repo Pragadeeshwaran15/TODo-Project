@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO Do</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <h3 class="text-center my-2">TO DO Application</h3>
+      <div id="addnew" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span>Add new ToDo</span>
+        <i class="fa-solid fa-circle-plus"></i>
+      </div>
+
+      <!-- model -->
+      <form
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">TO Do</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <p>Todo Title</p>
+              <input type="text" class="form-control" id="textInput" />
+              <div id="msg"></div>
+              <br />
+
+              <p>DeadLine</p>
+              <input type="date" class="form-control" id="dateInput" />
+              <br />
+
+              <p>Task</p>
+              <textarea
+                class="form-control"
+                id="textarea"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-bs-dismiss="modal"
+              >
+                <i class="fa-regular fa-rectangle-xmark"></i>
+              </button>
+              <button type="submit" id="add"class="btn btn-danger">Add</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!--  -->
+      <h5 class="text-center mt-3">TODO's</h5>
+      <div id="tasks"> </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c7e56301c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
